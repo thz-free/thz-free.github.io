@@ -151,11 +151,11 @@
 			
 			
 			<div>
-				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="86" src="//music.163.com/outchain/player?type=2&id=518682659&auto=1&height=66"></iframe>
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="86" src="//music.163.com/outchain/player?type=2&id=1384450197&auto=1&height=66"></iframe>
 			</div>
 			
 				
-				<p style="font-size: 12px;">这似乎是首纯音乐，请尽情的欣赏它吧！<p>
+				<p style="font-size: 12px;">博主爱的音乐，请尽情的欣赏它吧！<p>
 			
 		
 		</nav>
@@ -313,10 +313,10 @@
   <div class="article-entry" itemprop="articleBody">
     
     <p>欢迎来到陶化镇的博客 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>!</p>
-<h2 id="我的世界"><a href="#我的世界" class="headerlink" title="我的世界"></a>我的世界</h2><h3 id="我的座右铭"><a href="#我的座右铭" class="headerlink" title="我的座右铭"></a>我的座右铭</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;不是所有花，一开始都是花&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="我的世界"><a href="#我的世界" class="headerlink" title="我的世界"></a>我的世界</h2><h3 id="我的座右铭"><a href="#我的座右铭" class="headerlink" title="我的座右铭"></a>我的座右铭</h3><p><font color=#FF69B4 size=7 face="宋体">手摘日月摘星辰，世间无我这般人</font></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">所有的花，</span><br><span class="line">一开始都不是花</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="写作时间"><a href="#写作时间" class="headerlink" title="写作时间"></a>写作时间
+<h3 id="下面是我的博文"><a href="#下面是我的博文" class="headerlink" title="下面是我的博文"></a>下面是我的博文
     
     <a class="article-more-a" href="/2028/03/09/hello-world/#more">more >></a>
     
@@ -372,7 +372,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2021/03/09/myarticle/" target="_blank">myarticle</a>
+	  <a class="article-title" href="/2021/03/09/myarticle/" target="_blank">前后端分离大坑</a>
   
     </h1>
   
@@ -446,7 +446,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2021/03/09/main/" target="_blank">main</a>
+	  <a class="article-title" href="/2021/03/09/main/" target="_blank">linux(centos7)中安装7zp</a>
   
     </h1>
   
@@ -467,6 +467,11 @@
   
   <div class="article-entry" itemprop="articleBody">
     
+    <h2 id="linux-centos7-中安装7zp"><a href="#linux-centos7-中安装7zp" class="headerlink" title="linux(centos7)中安装7zp"></a>linux(centos7)中安装7zp</h2><h2 id="一-先安装wget"><a href="#一-先安装wget" class="headerlink" title="一. 先安装wget"></a>一. 先安装wget</h2><p>yum -y install wget</p>
+<h2 id="二-下载7z的压缩包"><a href="#二-下载7z的压缩包" class="headerlink" title="二. 下载7z的压缩包"></a>二. 下载7z的压缩包</h2><p>wget <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/p7zip/files/p7zip/16.02/p7zip_16.02_src_all.tar.bz2">https://sourceforge.net/projects/p7zip/files/p7zip/16.02/p7zip_16.02_src_all.tar.bz2</a></p>
+<h2 id="三-安装bzip"><a href="#三-安装bzip" class="headerlink" title="三. 安装bzip"></a>三. 安装bzip</h2><p>yum install -y bzip2
+    
+    <a class="article-more-a" href="/2021/03/09/main/#more">more >></a>
     
     
 
@@ -834,6 +839,56 @@
   
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
+  
+    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
+  
+    var modelName = "hibiki";
+  
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+       position: "right", 
+       width: 145, 
+       height: 315, 
+       hOffset: 50, 
+      
+    },
+    mobile: {
+       show: false, 
+       scale: 0.6 
+    },
+    react: {
+       opacity: 0.8 
+    }
+  })
+
+</script>
+
   
   
 </body>
